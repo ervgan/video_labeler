@@ -156,7 +156,7 @@ class VideoLabeler:
                 #press t to save a frame for the test dataset
                 elif key == ord("t"):
                     self.test_image_count += 1
-                    image_name = f'Background {self.test_image_count}_' + datetime.now().strftime("%d.%m.%Y_%H.%M.%S")
+                    image_name = f'Test {self.test_image_count}_' + datetime.now().strftime("%d.%m.%Y_%H.%M.%S")
                     print_info_screen("test", self.test_image_count, frame)
                     save_img(image, image_name, dataset_path, "test")
                     cv2.imshow("Frame", frame)
