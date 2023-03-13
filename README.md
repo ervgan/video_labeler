@@ -8,10 +8,13 @@
 
 -v --filePath
    type=str, path to video file
+   
 -c --className
    type=str, default="label", class name label
+   
 -f --frameRate
    type=int, default=1, frame rate
+   
 -i --classId
    type=int, default=0, Enter your class label id
 
